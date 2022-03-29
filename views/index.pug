@@ -3,8 +3,11 @@ html
     head
         meta(charset='UTF-8')
         title Fun Weather app
+        link(rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous")
         style
             include css/styles.css
     body
-        h1 Hello world!
-        footer &copy; Joni Jansson
+        #mainDiv
+            include includes/header.pug
+            include includes/main.pug
+            include includes/footer.pug

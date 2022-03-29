@@ -1,3 +1,95 @@
 body {
   background-color: rgb(194, 167, 194);
 }
+#mainDiv {
+  width: 50%;
+  height: 40%;
+  margin: auto;
+  margin-top: 10%;
+}
+
+#footer {
+  border: solid black 1px;
+  background-color: rgb(199, 199, 104);
+  text-align: center;
+  border-radius: 2px;
+}
+
+#navSection {
+  background-color: lightblue;
+  border: solid black 1px;
+  border-bottom: none;
+  border-radius: 2px;
+}
+
+#appHeader {
+  margin-left: auto;
+  padding-top: 4vw;
+  padding-bottom: 4vw;
+  text-align: center;
+  font-size: 25px;
+}
+
+#selections {
+  padding-bottom: 15px;
+}
+
+#citySelection {
+  margin-left: auto;
+}
+#cityLabel {
+  margin-left: 2vw;
+  margin-right: 1vw;
+  margin-top: 6px;
+}
+
+#cityPicker {
+  margin-right: 2vw;
+  margin-top: 6px;
+}
+
+#naviButtons {
+  margin-right: auto;
+}
+
+#today {
+  margin-right: 2px;
+  border-radius: 5px;
+}
+
+#thisWeek {
+  border-radius: 5px;
+}
+
+#mainSection {
+  background-color: rgb(166, 231, 133);
+  border: solid black 1px;
+  border-bottom: none;
+  border-radius: 2px;
+}
+
+#weatherData {
+  margin-left: auto;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+  text-align: center;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 1024px) {
+  #mainDiv {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #mainDiv {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #mainDiv {
+    width: 90%;
+  }
+}
