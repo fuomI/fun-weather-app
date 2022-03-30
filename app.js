@@ -10,6 +10,11 @@ const app = express();
 // Port
 const PORT = process.env.PORT || 5000;
 
+// Read cities into variable
+const cityData = fs.readFileSync(__dirname + '/views/json/capital_cities.json');
+
+const cityDataJSON = JSON.parse(cityData);
+
 // Load view engine PUG
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
@@ -17,36 +22,22 @@ app.set('view engine', 'pug');
 // Default route
 app.get('/', function(req,res) {
 
-    // Load index.pug
-    res.render('index');
+    // Load index.pug & pass through cities array
+    res.render('index', { cities: cityDataJSON });
 });
 
-// Data on capital cities (json) route
-app.get('/citydata', function(req,res) {
+// City data route
+app.get('/citydata', function(req, res) {
 
-    // Save json data of capital cities to variable
-    const cityData = fs.readFileSync(__dirname + '/views/json/capital_cities.json');
+    // Send city data as response
+    res.send(cityDataJSON);
 
-    res.json(cityData);
 });
 
 // Route 404
 app.get('*', function (req,res) {
     res.status(404).send("Can't find the requested page.");
 });
-
-/* Data on capital cities (json) route
-app.get('/citydata', (req, res, next) => {
-
-    // Save raw json data to variable
-    const rawData = fs.readFileSync(__dirname + '/views/json/capital_cities.json');
-
-    // String to json obj
-    const jsonData = JSON.parse(rawData);
-
-    // Send json data as response
-    res.send(Buffer.from(jsonData));
-}); */
 
 // App listens port:
 app.listen(PORT, function() {
