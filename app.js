@@ -13,6 +13,7 @@ const PORT = process.env.PORT || 5000;
 // Read cities into variable
 const cityData = fs.readFileSync(__dirname + '/views/json/capital_cities.json');
 
+// Parse into JSON object
 const cityDataJSON = JSON.parse(cityData);
 
 // Load view engine PUG
@@ -22,8 +23,8 @@ app.set('view engine', 'pug');
 // Default route
 app.get('/', function(req,res) {
 
-    // Load index.pug & pass through cities array
-    res.render('index', { cities: cityDataJSON });
+    // Load index.pug
+    res.render('index');
 });
 
 // City data route
@@ -31,7 +32,6 @@ app.get('/citydata', function(req, res) {
 
     // Send city data as response
     res.send(cityDataJSON);
-
 });
 
 // Route 404

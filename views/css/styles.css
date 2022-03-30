@@ -37,13 +37,9 @@ body {
 #citySelection {
   margin-left: auto;
 }
-#cityLabel {
-  margin-left: 2vw;
-  margin-right: 1vw;
-  margin-top: 6px;
-}
 
 #cityPicker {
+  margin-left: 2vw;
   margin-right: 2vw;
   margin-top: 6px;
 }
