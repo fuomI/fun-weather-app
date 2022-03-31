@@ -1,6 +1,7 @@
 body {
-  background-color: rgb(194, 167, 194);
+  background-image: url("../img/background.jpg");
 }
+
 #mainDiv {
   width: 50%;
   height: 40%;
@@ -9,17 +10,17 @@ body {
 }
 
 #footer {
-  border: solid black 1px;
-  background-color: rgb(199, 199, 104);
-  text-align: center;
+  margin-top: 2px;
+  text-align: right;
   border-radius: 2px;
 }
 
 #navSection {
-  background-color: lightblue;
+  background-color: rgb(255, 255, 255);
   border: solid black 1px;
   border-bottom: none;
-  border-radius: 2px;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
 }
 
 #appHeader {
@@ -41,7 +42,9 @@ body {
 #cityPicker {
   margin-left: 2vw;
   margin-right: 2vw;
-  margin-top: 6px;
+  margin-top: 4px;
+  border-radius: 4px;
+  padding: 4px;
 }
 
 #naviButtons {
@@ -51,17 +54,20 @@ body {
 #today {
   margin-right: 2px;
   border-radius: 5px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 #thisWeek {
   border-radius: 5px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 #mainSection {
-  background-color: rgb(166, 231, 133);
   border: solid black 1px;
-  border-bottom: none;
-  border-radius: 2px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 
 #weatherData {
@@ -70,6 +76,10 @@ body {
   padding-bottom: 5vw;
   text-align: center;
   font-size: 15px;
+  background-color: rgb(150, 181, 229);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  opacity: 0.7;
 }
 
 @media screen and (max-width: 1024px) {
