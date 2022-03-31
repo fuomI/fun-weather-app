@@ -6,7 +6,7 @@ window.onload = (event) => {
     const second = document.getElementById('second');
     const third = document.getElementById('third');
 
-    // My API key (Joni)
+    // Weatherstack.com API Key
     const apiKey = '722d03407f1aa7186ef010d5e70e918e';
 
     // Make call to the weather API
