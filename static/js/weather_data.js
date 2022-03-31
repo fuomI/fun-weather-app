@@ -6,8 +6,10 @@ window.onload = (event) => {
     const second = document.getElementById('second');
     const third = document.getElementById('third');
 
-    // My API key
+    // My API key (Joni)
     const apiKey = '722d03407f1aa7186ef010d5e70e918e';
+
+    // Veera's API Key
 
     // Make call to the weather API
     function getWeatherDataCurrent() {
@@ -47,4 +49,11 @@ window.onload = (event) => {
 
     // Run getWeatherDataCurrent() once when page is loaded
     getWeatherDataCurrent();
+
+    // Add eventlistener to the citypicker
+    const cityPicker = document.getElementById('cityPicker');
+
+    cityPicker.addEventListener('change', (event) => {
+        getWeatherDataCurrent();
+    });
 };

@@ -10,15 +10,18 @@ const app = express();
 // Port
 const PORT = process.env.PORT || 5000;
 
-// Read cities into variable
-const cityData = fs.readFileSync(__dirname + '/views/json/capital_cities.json');
-
-// Parse into JSON object
-const cityDataJSON = JSON.parse(cityData);
-
 // Load view engine PUG
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
+
+// Use static path which can be accessed easily
+app.use("/static", express.static("static"));
+
+// Read cities into variable
+const cityData = fs.readFileSync(__dirname + '/static/json/capital_cities.json');
+
+// Parse into JSON object
+const cityDataJSON = JSON.parse(cityData);
 
 // Default route
 app.get('/', function(req,res) {

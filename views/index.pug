@@ -4,16 +4,11 @@ html
         meta(charset='UTF-8')
         title Fun Weather app
         link(rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous")
-        // link(rel="stylesheet" href="/css/styles.css")
-        style
-            include css/styles.css
-        script
-            include javascripts/cities.js
-
+        link(rel="stylesheet" href="/static/css/styles.css")
+        script(src="/static/js/cities.js")
     body
         #mainDiv
             include includes/header.pug
             include includes/main.pug
             include includes/footer.pug
-    script
-        include javascripts/weather_data.js
+    script(src="/static/js/weather_data.js")

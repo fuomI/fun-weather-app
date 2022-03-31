@@ -1,4 +1,18 @@
 {
+  "name": "fun-weather-app",
+  "version": "1.0.0",
+  "description": "Weatherapp app in Heroku",
+  "main": "index.js",
+  "engines": {
+    "node": "17.x"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "keyword": [],
+  "author": "Joni Jansson",
+  "license": "ISC",
   "dependencies": {
     "express": "^4.17.3",
     "pug": "^3.0.2",
