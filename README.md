@@ -6,7 +6,6 @@ The user can pick a city and the application shows the temperature and weather c
 of said city.
 
 ## Styles
-- **Basic css**
 - **Pure css**
 
 ## Technologies
