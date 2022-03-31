@@ -17,9 +17,17 @@ fetch('/citydata')
         // Add cities to the cityPicker
         cityArr.forEach(function(city) {
 
+            // Make Helsinki default value
+            if (city === 'Helsinki') {
+
+                let cityElement = document.createElement('option');
+                cityElement.setAttribute('selected', 'selected');
+                cityElement.innerText = city;
+                document.getElementById('cityPicker').appendChild(cityElement);
+            }
+
             let cityElement = document.createElement('option');
             cityElement.innerText = city;
             document.getElementById('cityPicker').appendChild(cityElement);
-
         });
     });
