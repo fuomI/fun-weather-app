@@ -14,7 +14,7 @@ of said city.
 - **Pug view engine**
 
 ## Problems
-Unfortunately the API call to the weatherstack.com can be maid only using
+Unfortunately the API call to the weatherstack.com can be made only using
 http with free account.
 
 This is a problem because Heroku doesn't allow api calls over http. Thus
