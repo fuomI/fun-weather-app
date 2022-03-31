@@ -5,36 +5,12 @@ window.onload = (event) => {
     const first = document.getElementById('first');
     const second = document.getElementById('second');
     const third = document.getElementById('third');
-    const fourth = document.getElementById('fourth');
-    const fifth = document.getElementById('fifth');
-    const sixth = document.getElementById('sixth');
-    const seventh = document.getElementById('seventh');
-
-    // and button variables
-    const currentBtn = document.getElementById('today');
-    const forecastBtn = document.getElementById('thisWeek');
 
     // My API key
     const apiKey = '722d03407f1aa7186ef010d5e70e918e';
 
-    // Current-btn is active onload
-    currentBtn.classList.add('active');
-
     // Make call to the weather API
     function getWeatherDataCurrent() {
-
-        // Refresh button activity
-        currentBtn.classList.add('active');
-        forecastBtn.classList.remove('active');
-
-        // Reset main section
-        first.innerHTML = "";
-        second.innerHTML = "";
-        third.innerHTML = "";
-        fourth.innerHTML = "";
-        fifth.innerHTML = "";
-        sixth.innerHTML = "";
-        seventh.innerHTML = "";
 
         // Use the chosen city
         let city = document.getElementById('cityPicker').value;
@@ -64,6 +40,6 @@ window.onload = (event) => {
             });
     };
 
-    // and add event listener to current-btn
-    currentBtn.addEventListener("click", getWeatherDataCurrent());
+    // Run getWeatherDataCurrent() once when page is loaded
+    getWeatherDataCurrent();
 };

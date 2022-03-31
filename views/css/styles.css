@@ -47,33 +47,8 @@ body {
   padding: 4px;
 }
 
-#naviButtons {
-  margin-right: auto;
-}
-
-#today {
-  margin-right: 2px;
-  border-radius: 5px;
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
-}
-
-#today:hover {
-  color: rgb(150, 181, 229);
-}
-
-#thisWeek {
-  border-radius: 5px;
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
-}
-
-#thisWeek:hover {
-  color: rgb(150, 181, 229);
-}
-
-.active {
-  color: rgb(150, 181, 229);
+#cityLabel {
+  margin-left: 10px;
 }
 
 #mainSection {
