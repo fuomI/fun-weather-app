@@ -9,8 +9,6 @@ window.onload = (event) => {
     // My API key (Joni)
     const apiKey = '722d03407f1aa7186ef010d5e70e918e';
 
-    // Veera's API Key
-
     // Make call to the weather API
     function getWeatherDataCurrent() {
 
@@ -27,7 +25,7 @@ window.onload = (event) => {
             .then(res => res.json())
             .then(data => {
 
-                // Populate main section with weather data (#city, #temperature, #condition)
+                // Populate main section with weather data (#first, #second, #third)
 
                 // First city
                 let city = document.createElement('h2');
