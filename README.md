@@ -9,12 +9,12 @@ of said city.
 - **Basic css**
 - **Pure css**
 
-##Technologies
+## Technologies
 - **Node.js**
 - **Express**
 - **Pug view engine**
 
-##Problems
+## Problems
 Unfortunately the API call to the weatherstack.com can be maid only using
 http with free account.
 
@@ -23,7 +23,7 @@ the application works only locally as of now.
 
 Due to time constraints **(Project DL 31.3.)** I'm not able to work around this problem. 
 
-##How to run?
+## How to run?
 ### Option 1:
 App is published on Heroku: https://fun-weather-application.herokuapp.com/
 ### Option 2:
