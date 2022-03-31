@@ -12,6 +12,11 @@ window.onload = (event) => {
     // Make call to the weather API
     function getWeatherDataCurrent() {
 
+        // Reset fields
+        first.innerHTML = '';
+        second.innerHTML = '';
+        third.innerHTML = '';
+
         // Use the chosen city
         let city = document.getElementById('cityPicker').value;
 
