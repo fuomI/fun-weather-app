@@ -20,10 +20,16 @@ http with free account.
 This is a problem because Heroku doesn't allow api calls over http. Thus
 the application works only locally as of now.
 
-Due to time constraints **(Project DL 31.3.)** I'm not able to work around this problem. 
+## Screenshots
+
+![abudhabi]
+![helsinki]
 
 ## How to run?
 ### Option 1:
 App is published on Heroku: https://fun-weather-application.herokuapp.com/
 ### Option 2:
 Clone repository, install Node.js and run locally.
+
+[abudhabi]: screenshots/abudhabi.png
+[helsinki]: screenshots/helsinki.png
