@@ -28,6 +28,7 @@ the application works only locally as of now.
 ## How to run?
 ### Option 1:
 App is published on Heroku: https://fun-weather-application.herokuapp.com/
+(At the moment not working, see Problems section)
 ### Option 2:
 Clone repository, install Node.js and run locally.
 
