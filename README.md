@@ -14,11 +14,9 @@ of said city.
 - **Pug view engine**
 
 ## Problems
+
 Unfortunately the API call to the weatherstack.com can be made only using
 http with free account.
-
-This is a problem because Heroku doesn't allow api calls over http. Thus
-the application works only locally as of now.
 
 ## Screenshots
 
@@ -26,11 +24,10 @@ the application works only locally as of now.
 ![helsinki]
 
 ## How to run?
-### Option 1:
-App is published on Heroku: https://fun-weather-application.herokuapp.com/
-(At the moment not working, see Problems section)
-### Option 2:
-Clone repository, install Node.js and run locally.
+
+App is published on Heroku: http://fun-weather-application.herokuapp.com/
+
+
 
 [abudhabi]: screenshots/abudhabi.png
 [helsinki]: screenshots/helsinki.png
